@@ -47,6 +47,9 @@
         margin-top: 30px;
         color: #001433;
       }
+      .p {
+        margin-left: 20px auto;
+      }
 
       @media (max-width: 500px) {
         .container {
@@ -62,7 +65,8 @@
     <div class="container">
       <h1>Dice Roller</h1>
       <img src="dice-1.png" alt="Playing dice" class="dice" />
-      <br />
+
+      <h1 class="p">🎲</h1>
 
       <button class="btn">Roll</button>
       <br />
@@ -70,11 +74,13 @@
     <script>
       const btn = document.querySelector(".btn");
       const dice1 = document.querySelector(".dice");
+      const text = document.querySelector(".p");
 
       // const playing = true;
 
       btn.addEventListener("click", function () {
         const dice = Math.trunc(Math.random() * 6) + 1;
+        text.textContent = `${dice}`;
 
         dice1.src = `dice-${dice}.png`;
       });
