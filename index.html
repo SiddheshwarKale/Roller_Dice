@@ -4,6 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dice Roller</title>
+    <style>
+      body {
+        background-color: rgb(154, 158, 158);
+      }
+      h1 {
+        text-align: center;
+        color: #003380;
+      }
+      .container {
+        width: 400px;
+        border: 1px solid grey;
+        display: block;
+        margin: 40px auto;
+        box-shadow: 1px 1px 5px 0.5px #3674b5;
+        background-color: rgb(247, 187, 113);
+        border: black solid 2px;
+        border-radius: 20px;
+      }
+      .dice {
+        height: 200px;
+        display: block;
+        margin: 20px auto;
+        border: solid black 2px;
+        border-radius: 30px;
+      }
+      .btn {
+        font-size: 25px;
+        display: block;
+        margin: 20px auto;
+        background-color: #abd36c;
+        color: white;
+        padding: 5px 40px;
+        border-radius: 10px;
+
+        border: solid black 2px;
+      }
+      .text {
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        color: #001433;
+      }
+
+      @media (max-width: 500px) {
+        .container {
+          width: 90%;
+        }
+        .dice-img {
+          height: 170px;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container">
